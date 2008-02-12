@@ -18,12 +18,12 @@ BuildRequires: perl(Test::More)
 BuildArch: noarch
 
 %description
-Converts the EOL and EOF conventions in the passed string to a canonicalization form
-that handles 'mixed' EOL conventions.
+Converts the EOL and EOF conventions in the passed string to a canonicalization
+form that handles 'mixed' EOL conventions.
 
-It canonicalizes EOL as \n (the platform defined EOL) if it does not know the particular
-platform. Can also 'fix' the end-of-file mark if needed and ensure that the last line of
-the string is EOL terminated.
+It canonicalizes EOL as \n (the platform defined EOL) if it does not know the
+particular platform. Can also 'fix' the end-of-file mark if needed and ensure
+that the last line of the string is EOL terminated.
 
 
 
