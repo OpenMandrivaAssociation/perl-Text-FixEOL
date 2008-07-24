@@ -1,7 +1,7 @@
 
 %define realname   Text-FixEOL
 %define version    1.05
-%define release    %mkrel 1
+%define release    %mkrel 3
 
 Name:       perl-%{realname}
 Version:    %{version}
