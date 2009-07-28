@@ -1,21 +1,19 @@
+%define upstream_name    Text-FixEOL
+%define upstream_version 1.05
 
-%define realname   Text-FixEOL
-%define version    1.05
-%define release    %mkrel 4
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
-Name:       perl-%{realname}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
-Group:      Development/Perl
 Summary:    Canonicalizes mixed convention EOL/EOF
-Source:     http://www.cpan.org/modules/by-module/Text/%{realname}-%{version}.tar.gz
-Url:        http://search.cpan.org/dist/%{realname}
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: perl-devel
-BuildRequires: perl(Test::More)
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Text/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires: perl(Test::More)
 BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Converts the EOL and EOF conventions in the passed string to a canonicalization
@@ -25,10 +23,8 @@ It canonicalizes EOL as \n (the platform defined EOL) if it does not know the
 particular platform. Can also 'fix' the end-of-file mark if needed and ensure
 that the last line of the string is EOL terminated.
 
-
-
 %prep
-%setup -q -n %{realname}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -49,6 +45,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc META.yml Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
 
