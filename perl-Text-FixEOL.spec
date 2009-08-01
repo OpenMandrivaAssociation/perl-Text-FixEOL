@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Canonicalizes mixed convention EOL/EOF
 License:    GPL+ or Artistic
@@ -45,4 +45,3 @@ rm -rf $RPM_BUILD_ROOT
 %doc META.yml Changes README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
