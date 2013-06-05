@@ -2,14 +2,14 @@
 %define upstream_version 1.05
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%perl_convert_version 1.06
+Release:	1
 
 Summary:	Canonicalizes mixed convention EOL/EOF
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Text/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Text/Text-FixEOL-1.06.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
@@ -65,5 +65,6 @@ make test
 * Fri Jan 18 2008 Jérôme Quelin <jquelin@mandriva.org> 1.05-1mdv2008.1
 + Revision: 154662
 - import perl-Text-FixEOL
+
 
 
