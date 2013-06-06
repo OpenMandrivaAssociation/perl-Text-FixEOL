@@ -1,6 +1,5 @@
 %define upstream_name    Text-FixEOL
-%define upstream_version 1.05
-
+%define upstream_version 1.06
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 1.06
 Release:	1
