@@ -7,7 +7,7 @@ Release:	3
 Summary:	Canonicalizes mixed convention EOL/EOF
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Text/Text-FixEOL-1.06.tar.gz
 
 BuildRequires:	perl-devel
