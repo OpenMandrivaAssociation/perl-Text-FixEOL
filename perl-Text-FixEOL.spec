@@ -1,14 +1,14 @@
 %define upstream_name    Text-FixEOL
-%define upstream_version 1.06
+%define upstream_version 1.08
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 1.06
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Canonicalizes mixed convention EOL/EOF
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Text/Text-FixEOL-1.06.tar.gz
+Url:		https://github.com/JerilynFranz/perl-Text-FixEOL
+Source0:	https://cpan.metacpan.org/authors/id/S/SN/SNOWHARE/Text-FixEOL-1.08.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
