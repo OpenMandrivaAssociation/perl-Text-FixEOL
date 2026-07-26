@@ -1,8 +1,7 @@
 %define upstream_name    Text-FixEOL
-%define upstream_version 1.08
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.08
+Release:	2
 
 Summary:	Canonicalizes mixed convention EOL/EOF
 License:	GPL+ or Artistic
@@ -24,7 +23,7 @@ particular platform. Can also 'fix' the end-of-file mark if needed and ensure
 that the last line of the string is EOL terminated.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -50,8 +49,7 @@ make test
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 1.50.0-2mdv2010.0
 + Revision: 405950
 - force rebuild
-- rebuild using %%perl_convert_version
-- fixed license field
+- rebuild using %1.08 fixed license field
 
 * Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 1.05-4mdv2009.0
 + Revision: 258615
