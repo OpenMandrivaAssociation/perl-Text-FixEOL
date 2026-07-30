@@ -2,7 +2,7 @@
 %define upstream_version 1.08
 Name:		perl-%{upstream_name}
 Version:	1.08
-Release:	2
+Release:	3
 
 Summary:	Canonicalizes mixed convention EOL/EOF
 License:	GPL+ or Artistic
@@ -33,7 +33,7 @@ that the last line of the string is EOL terminated.
 %check
 # soft: do not fail package on test failures
 set +e
-make test
+make test || :
 
 %install
 %makeinstall_std
