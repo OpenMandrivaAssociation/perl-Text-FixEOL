@@ -2,7 +2,7 @@
 %define upstream_version 1.08
 Name:		perl-%{upstream_name}
 Version:	1.08
-Release:	3
+Release:	4
 
 Summary:	Canonicalizes mixed convention EOL/EOF
 License:	GPL+ or Artistic
@@ -27,7 +27,7 @@ that the last line of the string is EOL terminated.
 %setup -q -n Text-FixEOL-1.08
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
