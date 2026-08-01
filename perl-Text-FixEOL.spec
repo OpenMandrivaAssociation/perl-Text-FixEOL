@@ -2,7 +2,7 @@
 %define upstream_version 1.08
 Name:		perl-%{upstream_name}
 Version:	1.08
-Release:	4
+Release:	5
 
 Summary:	Canonicalizes mixed convention EOL/EOF
 License:	GPL+ or Artistic
